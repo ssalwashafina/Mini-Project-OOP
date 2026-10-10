@@ -15,8 +15,14 @@ public class ProgramMahasiswa {
             System.out.print("Masukkan NIM Mahasiswa: ");
             mahasiswa[i].NIM = Long.parseLong(input.nextLine());
 
-            System.out.print("Masukkan Nilai Mahasiswa: ");
+            System.out.print("Masukkan Nilai Mahasiswa (0-100): ");
             mahasiswa[i].nilai = Double.parseDouble(input.nextLine());
+
+            while (mahasiswa[i].nilai < 0 || mahasiswa[i].nilai > 100) {
+                System.out.println("Nilai harus rentang 0-100!");
+                System.out.print("Masukkan Nilai Mahasiswa (0-100): ");
+                mahasiswa[i].nilai = Double.parseDouble(input.nextLine());
+            }
         }
 
         System.out.println("\nDATA MAHASISWA");
