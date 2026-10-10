@@ -11,7 +11,7 @@ public class Mahasiswa {
 
     public void cekKelulusan() {
         if(nilai >= 60) {
-            System.out.println("Status Kelulusan: :Lulus");
+            System.out.println("Status Kelulusan: Lulus");
         } else {
             System.out.println("Status Kelulusan: Tidak Lulus");
         }
