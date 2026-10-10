@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ProgramMahasiswa {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Mahasiswa [] mahasiswa = new Mahasiswa[3];
+        Mahasiswa[] mahasiswa = new Mahasiswa[3];
 
         for (int i = 0; i < mahasiswa.length; i++) {
             mahasiswa[i] = new Mahasiswa();
@@ -13,7 +13,7 @@ public class ProgramMahasiswa {
             mahasiswa[i].nama = input.nextLine();
 
             System.out.print("Masukkan NIM Mahasiswa: ");
-            mahasiswa[i].NIM = input.nextLine();
+            mahasiswa[i].NIM = Long.parseLong(input.nextLine());
 
             System.out.print("Masukkan Nilai Mahasiswa: ");
             mahasiswa[i].nilai = Double.parseDouble(input.nextLine());

@@ -1,6 +1,6 @@
 public class Mahasiswa {
     String nama;
-    String NIM;
+    Long NIM;
     double nilai;
     
     public void tampilkanData() {
