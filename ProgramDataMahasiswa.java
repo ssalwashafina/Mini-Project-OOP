@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ProgramMahasiswa {
+public class ProgramDataMahasiswa {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Mahasiswa[] mahasiswa = new Mahasiswa[3];
